@@ -233,13 +233,11 @@ class lectura extends Thread
     try
     {
       Runtime r = Runtime.getRuntime();
-      //Process p_2 = r.exec("/home/bps_csp/Documentos/UNAL/ALife/Pescera/Pescera.bin");
-      Process p_2 = r.exec("/home/bps_csp/Documentos/UNAL/ALife/Pescera/Pescera.bin"+pezCreado.toString(4)+nombre);
+      Process p_2 = r.exec("/Path/With/To/The_Executable_File/Pescera.bin"+pezCreado.toString(4)+nombre);
       p_2.waitFor();
     }
     catch(Exception i) {
     }
-    //System.out.println("/home/bps_csp/Documentos/UNAL/ALife/Pescera/Pescera.bin"+pezCreado.toString(4)+nombre);
   }
 }
 
