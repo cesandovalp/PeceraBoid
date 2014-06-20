@@ -8,7 +8,7 @@ public class PezBoidGroup {
     pecesImagen = new ArrayList();
 
     for (int y = 0; y < clases; y++)
-      pecesImagen.add(loadImage("/home/bps_csp/Documentos/UNAL/ALife/Pescera/"+y+".png"));
+      pecesImagen.add(loadImage("/path/to/the/images/of/the_fish/"+y+".png"));
 
     PezBoidL = new ArrayList();
     for (int x = 0; x < n; x++)
@@ -26,7 +26,7 @@ public class PezBoidGroup {
   void add(int y, int tipo)
   {
     System.out.println("Poblacion: "+PezBoidL.size());
-    PezBoidL.add(new PezBoid((PImage) loadImage("/home/bps_csp/Documentos/UNAL/ALife/Pescera/A"+y+".png"), tipo));
+    PezBoidL.add(new PezBoid((PImage) loadImage("/path/to/the/images/of/the_fish/A"+y+".png"), tipo));
   }
   
   void remove(int i, int i2)
